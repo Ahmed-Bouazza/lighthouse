@@ -16,7 +16,7 @@ const clampTo2Decimals = val => Math.round(val * 100) / 100;
 class ReportScoring {
   /**
    * Computes the weighted-average of the score of the list of items.
-   * @param {!Array<{score: ?number|boolean|undefined, weight: number|undefined}>} items
+   * @param {!Array<{score: number, weight: number|undefined}>} items
    * @return {number}
    */
   static arithmeticMean(items) {
@@ -38,7 +38,7 @@ class ReportScoring {
   /**
    * Returns the report JSON object with computed scores.
    * @param {{categories: !Object<string, {id: string|undefined, weight: number|undefined, score: number|undefined, audits: !Array<{id: string, weight: number|undefined}>}>}} config
-   * @param {!Object<string, {score: ?number|boolean|undefined, notApplicable: boolean, informative: boolean}>} resultsByAuditId
+   * @param {!Object<string, {score: number, notApplicable: boolean, informative: boolean}>} resultsByAuditId
    */
   static scoreAllCategories(config, resultsByAuditId) {
     for (const [categoryId, category] of Object.entries(config.categories)) {
