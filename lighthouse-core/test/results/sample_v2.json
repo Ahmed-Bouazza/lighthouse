@@ -1,7 +1,7 @@
 {
   "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3358.0 Safari/537.36",
   "lighthouseVersion": "2.9.1",
-  "generatedTime": "2018-03-09T03:02:28.589Z",
+  "generatedTime": "2018-03-13T00:55:45.840Z",
   "initialUrl": "http://localhost:10200/dobetterweb/dbw_tester.html",
   "url": "http://localhost:10200/dobetterweb/dbw_tester.html",
   "runWarnings": [],
@@ -1547,111 +1547,111 @@
     "accesskeys": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "accesskeys",
-      "description": "`[accesskey]` values are not unique",
+      "description": "`[accesskey]` values are unique",
       "helpText": "Access keys let users quickly focus a part of the page. For proper navigation, each access key must be unique. [Learn more](https://dequeuniversity.com/rules/axe/2.2/accesskeys?application=lighthouse)."
     },
     "aria-allowed-attr": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "aria-allowed-attr",
-      "description": "`[aria-*]` attributes do not match their roles",
+      "description": "`[aria-*]` attributes match their roles",
       "helpText": "Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn more](https://dequeuniversity.com/rules/axe/2.2/aria-allowed-attr?application=lighthouse)."
     },
     "aria-required-attr": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "aria-required-attr",
-      "description": "`[role]`s do not have all required `[aria-*]` attributes",
+      "description": "`[role]`s have all required `[aria-*]` attributes",
       "helpText": "Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more](https://dequeuniversity.com/rules/axe/2.2/aria-required-attr?application=lighthouse)."
     },
     "aria-required-children": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "aria-required-children",
-      "description": "Elements with `[role]` that require specific children `[role]`s, are missing.",
+      "description": "Elements with `[role]` that require specific children `[role]`s, are present",
       "helpText": "Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more](https://dequeuniversity.com/rules/axe/2.2/aria-required-children?application=lighthouse)."
     },
     "aria-required-parent": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "aria-required-parent",
-      "description": "`[role]`s are not contained by their required parent element",
+      "description": "`[role]`s are contained by their required parent element",
       "helpText": "Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more](https://dequeuniversity.com/rules/axe/2.2/aria-required-parent?application=lighthouse)."
     },
     "aria-roles": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "aria-roles",
-      "description": "`[role]` values are not valid",
+      "description": "`[role]` values are valid",
       "helpText": "ARIA roles must have valid values in order to perform their intended accessibility functions. [Learn more](https://dequeuniversity.com/rules/axe/2.2/aria-roles?application=lighthouse)."
     },
     "aria-valid-attr-value": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "aria-valid-attr-value",
-      "description": "`[aria-*]` attributes do not have valid values",
+      "description": "`[aria-*]` attributes have valid values",
       "helpText": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid values. [Learn more](https://dequeuniversity.com/rules/axe/2.2/aria-valid-attr-value?application=lighthouse)."
     },
     "aria-valid-attr": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "aria-valid-attr",
-      "description": "`[aria-*]` attributes are not valid or misspelled",
+      "description": "`[aria-*]` attributes are valid and not misspelled",
       "helpText": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid names. [Learn more](https://dequeuniversity.com/rules/axe/2.2/aria-valid-attr?application=lighthouse)."
     },
     "audio-caption": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "audio-caption",
-      "description": "`<audio>` elements are missing a `<track>` element with `[kind=\"captions\"]`.",
+      "description": "`<audio>` elements contain a `<track>` element with `[kind=\"captions\"]`",
       "helpText": "Captions make audio elements usable for deaf or hearing-impaired users, providing critical information such as who is talking, what they're saying, and other non-speech information. [Learn more](https://dequeuniversity.com/rules/axe/2.2/audio-caption?application=lighthouse)."
     },
     "button-name": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "button-name",
-      "description": "Buttons do not have an accessible name",
+      "description": "Buttons have an accessible name",
       "helpText": "When a button doesn't have an accessible name, screen readers announce it as \"button\", making it unusable for users who rely on screen readers. [Learn more](https://dequeuniversity.com/rules/axe/2.2/button-name?application=lighthouse)."
     },
     "bypass": {
@@ -1741,23 +1741,23 @@
     "definition-list": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "definition-list",
-      "description": "`<dl>`'s do not contain only properly-ordered `<dt>` and `<dd>` groups, `<script>` or `<template>` elements.",
+      "description": "`<dl>`'s contain only properly-ordered `<dt>` and `<dd>` groups, `<script>` or `<template>` elements.",
       "helpText": "When definition lists are not properly marked up, screen readers may produce confusing or inaccurate output. [Learn more](https://dequeuniversity.com/rules/axe/2.2/definition-list?application=lighthouse)."
     },
     "dlitem": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "dlitem",
-      "description": "Definition list items are not wrapped in `<dl>` elements",
+      "description": "Definition list items are wrapped in `<dl>` elements",
       "helpText": "Definition list items (`<dt>` and `<dd>`) must be wrapped in a parent `<dl>` element to ensure that screen readers can properly announce them. [Learn more](https://dequeuniversity.com/rules/axe/2.2/dlitem?application=lighthouse)."
     },
     "document-title": {
@@ -1799,12 +1799,12 @@
     "frame-title": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "frame-title",
-      "description": "`<frame>` or `<iframe>` elements do not have a title",
+      "description": "`<frame>` or `<iframe>` elements have a title",
       "helpText": "Screen reader users rely on frame titles to describe the contents of frames. [Learn more](https://dequeuniversity.com/rules/axe/2.2/frame-title?application=lighthouse)."
     },
     "html-has-lang": {
@@ -1860,12 +1860,12 @@
     "html-lang-valid": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "html-lang-valid",
-      "description": "`<html>` element does not have a valid value for its `[lang]` attribute.",
+      "description": "`<html>` element has a valid value for its `[lang]` attribute",
       "helpText": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) helps screen readers announce text properly. [Learn more](https://dequeuniversity.com/rules/axe/2.2/valid-lang?application=lighthouse)."
     },
     "image-alt": {
@@ -1955,12 +1955,12 @@
     "input-image-alt": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "input-image-alt",
-      "description": "`<input type=\"image\">` elements do not have `[alt]` text",
+      "description": "`<input type=\"image\">` elements have `[alt]` text",
       "helpText": "When an image is being used as an `<input>` button, providing alternative text can help screen reader users understand the purpose of the button. [Learn more](https://dequeuniversity.com/rules/axe/2.2/input-image-alt?application=lighthouse)."
     },
     "label": {
@@ -2051,12 +2051,12 @@
     "layout-table": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "layout-table",
-      "description": "Presentational `<table>` elements do not avoid using `<th>`, `<caption>` or the `[summary]` attribute.",
+      "description": "Presentational `<table>` elements avoid using `<th>`, `<caption>` or the `[summary]` attribute.",
       "helpText": "A table being used for layout purposes should not include data elements, such as the th or caption elements or the summary attribute, because this can create a confusing experience for screen reader users. [Learn more](https://dequeuniversity.com/rules/axe/2.2/layout-table?application=lighthouse)."
     },
     "link-name": {
@@ -2132,34 +2132,34 @@
     "list": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "list",
-      "description": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+      "description": "Lists contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
       "helpText": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more](https://dequeuniversity.com/rules/axe/2.2/list?application=lighthouse)."
     },
     "listitem": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "listitem",
-      "description": "List items (`<li>`) are not contained within `<ul>` or `<ol>` parent elements.",
+      "description": "List items (`<li>`) are contained within `<ul>` or `<ol>` parent elements",
       "helpText": "Screen readers require list items (`<li>`) to be contained within a parent `<ul>` or `<ol>` to be announced properly. [Learn more](https://dequeuniversity.com/rules/axe/2.2/listitem?application=lighthouse)."
     },
     "meta-refresh": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "meta-refresh",
-      "description": "The document uses `<meta http-equiv=\"refresh\">`",
+      "description": "The document does not use `<meta http-equiv=\"refresh\">`",
       "helpText": "Users do not expect a page to refresh automatically, and doing so will move focus back to the top of the page. This may create a frustrating or confusing experience. [Learn more](https://dequeuniversity.com/rules/axe/2.2/meta-refresh?application=lighthouse)."
     },
     "meta-viewport": {
@@ -2183,78 +2183,78 @@
     "object-alt": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "object-alt",
-      "description": "`<object>` elements do not have `[alt]` text",
+      "description": "`<object>` elements have `[alt]` text",
       "helpText": "Screen readers cannot translate non-text content. Adding alt text to `<object>` elements helps screen readers convey meaning to users. [Learn more](https://dequeuniversity.com/rules/axe/2.2/object-alt?application=lighthouse)."
     },
     "tabindex": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "tabindex",
-      "description": "Some elements have a `[tabindex]` value greater than 0",
+      "description": "No element has a `[tabindex]` value greater than 0",
       "helpText": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more](https://dequeuniversity.com/rules/axe/2.2/tabindex?application=lighthouse)."
     },
     "td-headers-attr": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "td-headers-attr",
-      "description": "Cells in a `<table>` element that use the `[headers]` attribute refers to other cells of that same table.",
+      "description": "Cells in a `<table>` element that use the `[headers]` attribute only refer to other cells of that same table.",
       "helpText": "Screen readers have features to make navigating tables easier. Ensuring `<td>` cells using the `[headers]` attribute only refer to other cells in the same table may improve the experience for screen reader users. [Learn more](https://dequeuniversity.com/rules/axe/2.2/td-headers-attr?application=lighthouse)."
     },
     "th-has-data-cells": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "th-has-data-cells",
-      "description": "`<th>` elements and elements with `[role=\"columnheader\"/\"rowheader\"]` do not have data cells they describe.",
+      "description": "`<th>` elements and elements with `[role=\"columnheader\"/\"rowheader\"]` have data cells they describe.",
       "helpText": "Screen readers have features to make navigating tables easier. Ensuring table headers always refer to some set of cells may improve the experience for screen reader users. [Learn more](https://dequeuniversity.com/rules/axe/2.2/th-has-data-cells?application=lighthouse)."
     },
     "valid-lang": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "valid-lang",
-      "description": "`[lang]` attributes do not have a valid value",
+      "description": "`[lang]` attributes have a valid value",
       "helpText": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) on elements helps ensure that text is pronounced correctly by a screen reader. [Learn more](https://dequeuniversity.com/rules/axe/2.2/valid-lang?application=lighthouse)."
     },
     "video-caption": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "video-caption",
-      "description": "`<video>` elements do not contain a `<track>` element with `[kind=\"captions\"]`.",
+      "description": "`<video>` elements contain a `<track>` element with `[kind=\"captions\"]`",
       "helpText": "When a video provides a caption it is easier for deaf and hearing impaired users to access its information. [Learn more](https://dequeuniversity.com/rules/axe/2.2/video-caption?application=lighthouse)."
     },
     "video-description": {
       "score": 1,
       "displayValue": "",
-      "rawValue": false,
+      "rawValue": true,
       "scoreDisplayMode": "binary",
       "informative": true,
       "notApplicable": true,
       "name": "video-description",
-      "description": "`<video>` elements do not contain a `<track>` element with `[kind=\"description\"]`.",
+      "description": "`<video>` elements contain a `<track>` element with `[kind=\"description\"]`",
       "helpText": "Audio descriptions provide relevant information for videos that dialogue cannot, such as facial expressions and scenes. [Learn more](https://dequeuniversity.com/rules/axe/2.2/video-description?application=lighthouse)."
     },
     "custom-controls-labels": {
@@ -2780,21 +2780,19 @@
       }
     },
     "unminified-javascript": {
-      "score": 0.9,
+      "score": 1,
       "displayValue": "Potential savings of 30470 bytes",
-      "rawValue": 170,
+      "rawValue": 0,
       "extendedInfo": {
         "value": {
-          "wastedMs": 170,
+          "wastedMs": 0,
           "wastedKb": 30,
           "results": [
             {
               "url": "http://localhost:10200/zone.js",
               "totalBytes": 71654,
               "wastedBytes": 30470,
-              "wastedPercent": 42.52388078488413,
-              "wastedMs": 174.32104767345731,
-              "totalMs": 409.9376550703614
+              "wastedPercent": 42.52388078488413
             }
           ]
         }
@@ -2832,13 +2830,11 @@
             "url": "http://localhost:10200/zone.js",
             "totalBytes": 71654,
             "wastedBytes": 30470,
-            "wastedPercent": 42.52388078488413,
-            "wastedMs": 174.32104767345731,
-            "totalMs": 409.9376550703614
+            "wastedPercent": 42.52388078488413
           }
         ],
         "summary": {
-          "wastedMs": 170,
+          "wastedMs": 0,
           "wastedBytes": 30470
         }
       }
@@ -2870,12 +2866,12 @@
       }
     },
     "uses-webp-images": {
-      "score": 0.9,
+      "score": 1,
       "displayValue": "Potential savings of 8526 bytes",
-      "rawValue": 50,
+      "rawValue": 0,
       "extendedInfo": {
         "value": {
-          "wastedMs": 50,
+          "wastedMs": 0,
           "wastedKb": 8,
           "results": [
             {
@@ -2883,9 +2879,7 @@
               "fromProtocol": true,
               "isCrossOrigin": false,
               "totalBytes": 24620,
-              "wastedBytes": 8526,
-              "wastedMs": 48.777855348339266,
-              "totalMs": 140.8527795773062
+              "wastedBytes": 8526
             }
           ]
         }
@@ -2929,13 +2923,11 @@
             "fromProtocol": true,
             "isCrossOrigin": false,
             "totalBytes": 24620,
-            "wastedBytes": 8526,
-            "wastedMs": 48.777855348339266,
-            "totalMs": 140.8527795773062
+            "wastedBytes": 8526
           }
         ],
         "summary": {
-          "wastedMs": 50,
+          "wastedMs": 0,
           "wastedBytes": 8526
         }
       }
@@ -2967,27 +2959,23 @@
       }
     },
     "uses-request-compression": {
-      "score": 0.65,
+      "score": 0.9,
       "displayValue": "Potential savings of 64646 bytes",
-      "rawValue": 370,
+      "rawValue": 150,
       "extendedInfo": {
         "value": {
-          "wastedMs": 370,
+          "wastedMs": 150,
           "wastedKb": 63,
           "results": [
             {
               "url": "http://localhost:10200/zone.js",
               "totalBytes": 71501,
-              "wastedBytes": 56204,
-              "wastedMs": 321.5471008677058,
-              "totalMs": 409.06233113553895
+              "wastedBytes": 56204
             },
             {
               "url": "http://localhost:10200/dobetterweb/dbw_tester.html",
               "totalBytes": 12519,
-              "wastedBytes": 8442,
-              "wastedMs": 48.29728534490735,
-              "totalMs": 71.62209372576345
+              "wastedBytes": 8442
             }
           ]
         }
@@ -3024,20 +3012,16 @@
           {
             "url": "http://localhost:10200/zone.js",
             "totalBytes": 71501,
-            "wastedBytes": 56204,
-            "wastedMs": 321.5471008677058,
-            "totalMs": 409.06233113553895
+            "wastedBytes": 56204
           },
           {
             "url": "http://localhost:10200/dobetterweb/dbw_tester.html",
             "totalBytes": 12519,
-            "wastedBytes": 8442,
-            "wastedMs": 48.29728534490735,
-            "totalMs": 71.62209372576345
+            "wastedBytes": 8442
           }
         ],
         "summary": {
-          "wastedMs": 370,
+          "wastedMs": 150,
           "wastedBytes": 64646
         }
       }
@@ -4502,7 +4486,7 @@
       "scoreDisplayMode": "binary",
       "name": "is-crawlable",
       "description": "Page is blocked from indexing",
-      "helpText": "The \"Robots\" directives tell crawlers how your content should be indexed. [Learn more](https://developers.google.com/search/reference/robots_meta_tag)."
+      "helpText": "Search engines are unable to include your pages in search results if they don't have permission to crawl them. [Learn more](https://developers.google.com/lighthouse/audits/indexing)."
     },
     "hreflang": {
       "score": 1,
@@ -4541,7 +4525,7 @@
       "notApplicable": true,
       "name": "canonical",
       "description": "Document has a valid `rel=canonical`",
-      "helpText": "Canonical links suggest which URL to show in search results. Read more in [Use canonical URLs](https://support.google.com/webmasters/answer/139066)."
+      "helpText": "Canonical links suggest which URL to show in search results. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/canonical)."
     },
     "mobile-friendly": {
       "score": 0,
@@ -5246,6 +5230,6 @@
     }
   },
   "timing": {
-    "total": 1029
+    "total": 1117
   }
 }
