@@ -104,11 +104,12 @@ class Audit {
   /**
    * @param {!Audit} audit
    * @param {!AuditResult} result
-   * @return {{score: number, scoreDisplayMode: string, informative: boolean}}
+   * @return {{score: number, scoreDisplayMode: string, informative: boolean, rawValue: boolean}}
    */
   static _normalizeAuditScore(audit, result) {
     let score = typeof result.score === 'undefined' ? result.rawValue : result.score;
     let informative;
+    let rawValue;
 
     if (typeof score === 'boolean' || score === null) {
       score = score ? 1 : 0;
@@ -119,6 +120,7 @@ class Audit {
     // If the audit was determined to not apply to the page, we'll reset it as informative only
     if (result.notApplicable) {
       score = 1;
+      rawValue = true;
       informative = true;
     }
 
@@ -131,6 +133,7 @@ class Audit {
       score,
       scoreDisplayMode,
       informative,
+      rawValue,
     };
   }
 
@@ -144,7 +147,8 @@ class Audit {
       throw new Error('generateAuditResult requires a rawValue');
     }
 
-    const {score, scoreDisplayMode, informative} = Audit._normalizeAuditScore(audit, result);
+    const {score, scoreDisplayMode, informative, rawValue} = Audit._normalizeAuditScore(audit,
+        result);
 
     const displayValue = result.displayValue ? `${result.displayValue}` : '';
 
@@ -158,7 +162,7 @@ class Audit {
     return {
       score,
       displayValue,
-      rawValue: result.rawValue,
+      rawValue: rawValue || result.rawValue,
       error: result.error,
       debugString: result.debugString,
       extendedInfo: result.extendedInfo,
